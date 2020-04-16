@@ -85,6 +85,8 @@ github.com/go-logfmt/logfmt v0.4.0/go.mod h1:3RMwSq7FuexP4Kalkev3ejPJsZTpXXBr9+V
 github.com/go-sql-driver/mysql v1.4.1 h1:g24URVg0OFbNUTx9qqY1IRZ9D9z3iPyi5zKhQZpNwpA=
 github.com/go-sql-driver/mysql v1.4.1/go.mod h1:zAC/RDZ24gD3HViQzih4MyKcchzm+sOG5ZlKdlhCg5w=
 github.com/go-stack/stack v1.8.0/go.mod h1:v0f6uXyyMGvRgIKkXu+yp6POWl0qKG85gN/melR3HDY=
+github.com/gocql/gocql v0.0.0-20171220143535-56a164ee9f31 h1:kPjRO/S+4pjIgvub1+xsaQ6xudIgvVPoJYGGkJ7Qx8E=
+github.com/gocql/gocql v0.0.0-20171220143535-56a164ee9f31/go.mod h1:GjP0ITc4WbMO5dEWwikPqq0ZWbloAO6CO6g0VAK7tTc=
 github.com/gocql/gocql v0.0.0-20191126110522-1982a06ad6b9 h1:90F3aCM6RNWVC05yJUGbgxgNoDdXyy4mQ8S893sSEm8=
 github.com/gocql/gocql v0.0.0-20191126110522-1982a06ad6b9/go.mod h1:DL0ekTmBSTdlNF25Orwt/JMzqIq3EJ4MVa/J/uK64OY=
 github.com/gogo/googleapis v0.0.0-20180223154316-0cd9801be74a/go.mod h1:gf4bu3Q80BeJ6H1S1vYPm8/ELATdvryBaNFGgqEef3s=
@@ -299,6 +301,8 @@ go.uber.org/atomic v1.5.1 h1:rsqfU5vBkVknbhUGbAUwQKR2H4ItV8tjJ+6kJX4cxHM=
 go.uber.org/atomic v1.5.1/go.mod h1:sABNBOSYdrvTF6hTgEIbc7YasKWGhgEQZyfxyTvoXHQ=
 go.uber.org/cadence v0.11.3-0.20200408211929-2e8992a5ef2d h1:65lxEqVKw7HDFojwOrc7CaIhaQQKQ2UJonogoI4nCKg=
 go.uber.org/cadence v0.11.3-0.20200408211929-2e8992a5ef2d/go.mod h1:VQIAZxvehjwln/xaRv1ghzcxo7TjCHEetZQkc8NlrvE=
+go.uber.org/cadence v0.11.3-0.20200416214243-e5db50c4f0ee h1:Befy8xWdwNnPdw29jGHtLS0iPSB/k5Kfmk/3Xow5IKI=
+go.uber.org/cadence v0.11.3-0.20200416214243-e5db50c4f0ee/go.mod h1:VQIAZxvehjwln/xaRv1ghzcxo7TjCHEetZQkc8NlrvE=
 go.uber.org/dig v1.7.0 h1:E5/L92iQTNJTjfgJF2KgU+/JpMaiuvK2DHLBj0+kSZk=
 go.uber.org/dig v1.7.0/go.mod h1:z+dSd2TP9Usi48jL8M3v63iSBVkiwtVyMKxMZYYauPg=
 go.uber.org/fx v1.9.0 h1:7OAz8ucp35AU8eydejpYG7QrbE8rLKzGhHbZlJi5LYY=
