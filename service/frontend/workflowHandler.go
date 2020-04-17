@@ -24,6 +24,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"strconv"
 	"sync/atomic"
 	"time"
 
@@ -1971,6 +1972,11 @@ func (wh *WorkflowHandler) GetWorkflowExecutionHistory(
 	clientImpl := call.Header(common.ClientImplHeaderName)
 	supportsRawHistoryQuery := wh.versionChecker.SupportsRawHistoryQuery(clientImpl, clientFeatureVersion) == nil
 	isRawHistoryEnabled := wh.config.SendRawWorkflowHistory(domainName) && supportsRawHistoryQuery
+
+	wh.GetLogger().Info("Raw history mode is: "+strconv.FormatBool(isRawHistoryEnabled),
+		tag.WorkflowDomainID(domainID),
+		tag.WorkflowID(execution.GetWorkflowId()),
+		tag.WorkflowRunID(execution.GetRunId()))
 
 	history := &gen.History{}
 	history.Events = []*gen.HistoryEvent{}
