@@ -1973,6 +1973,16 @@ func (wh *WorkflowHandler) GetWorkflowExecutionHistory(
 	supportsRawHistoryQuery := wh.versionChecker.SupportsRawHistoryQuery(clientImpl, clientFeatureVersion) == nil
 	isRawHistoryEnabled := wh.config.SendRawWorkflowHistory(domainName) && supportsRawHistoryQuery
 
+	wh.GetLogger().Info("SendRawWorkflowHistory: "+strconv.FormatBool( wh.config.SendRawWorkflowHistory(domainName)),
+		tag.WorkflowDomainID(domainID),
+		tag.WorkflowID(execution.GetWorkflowId()),
+		tag.WorkflowRunID(execution.GetRunId()))
+
+	wh.GetLogger().Info("supportsRawHistoryQuery: "+strconv.FormatBool(supportsRawHistoryQuery),
+		tag.WorkflowDomainID(domainID),
+		tag.WorkflowID(execution.GetWorkflowId()),
+		tag.WorkflowRunID(execution.GetRunId()))
+
 	wh.GetLogger().Info("Raw history mode is: "+strconv.FormatBool(isRawHistoryEnabled),
 		tag.WorkflowDomainID(domainID),
 		tag.WorkflowID(execution.GetWorkflowId()),
