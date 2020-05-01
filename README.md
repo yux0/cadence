@@ -5,7 +5,7 @@
 
 Visit [cadenceworkflow.io](https://cadenceworkflow.io) to learn about Cadence.
 
-This repo contains the source code of the Cadence server. To implement workflows, activities and worker use [Go client](https://github.com/uber-go/cadence-client) or [Java client](https://github.com/uber-java/cadence-client).
+This repo forks from uber/cadence repo and is aim at having a lite version of Cadence which won't support cross clusters setup.
 
 See Maxim's talk at [Data@Scale Conference](https://atscaleconference.com/videos/cadence-microservice-architecture-beyond-requestreply) for an architectural overview of Cadence.
 
